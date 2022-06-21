@@ -1,10 +1,4 @@
 
-stages{
-  stage('Example') {
-    step {
       echo 'Brota"
-    }
-  }
-}
 
 
