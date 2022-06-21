@@ -1,4 +1,13 @@
-
-      echo 'Brota'
-
-
+pipeline {
+      agente{
+            dockerfile true
+      }
+      stages {
+            stage('Example') {
+                  steps {
+                        echo 'Brota'
+                        
+                  }
+            }
+      }
+}
