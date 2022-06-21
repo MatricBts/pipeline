@@ -1,12 +1,10 @@
-#!groovy
 
-pipeline{
-  stages{
-    stage('Example') {
-      step {
-        echo 'Brota"
-      }
+stages{
+  stage('Example') {
+    step {
+      echo 'Brota"
     }
   }
 }
+
 
