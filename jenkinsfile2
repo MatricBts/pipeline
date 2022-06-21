@@ -1,1 +1,14 @@
-echo 'hello'
+pipeline{
+  agent{
+    dockerfile true
+  }
+  stages{
+    stage('Example') {
+      step {
+        echo 'Brota"
+        sh 'echo myCustomEnvVar = $myCustomEnvVar'
+      }
+    }
+  }
+}
+
