@@ -1,13 +1,12 @@
-pipeline{
-      agent{
-            dockerfile true
-      }
-      stages {
-            stage('Example') {
-                  steps {
-                        echo 'Brota'
-                        
-                  }
+pipeline {
+    agent {
+        docker { image 'node:16.13.1-alpine' }
+    }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
             }
-      }
+        }
+    }
 }
