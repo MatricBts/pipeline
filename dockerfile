@@ -1,4 +1,3 @@
-FROM ubuntu
+FROM node:16.13.1-alpine
 
-RUN /bin/bash -c
-ENV myCustomEnvVar="This is a sample."
+RUN apk add -U subversion
