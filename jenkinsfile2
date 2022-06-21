@@ -8,7 +8,6 @@ pipeline{
     stage('Example') {
       step {
         echo 'Brota"
-        sh 'echo myCustomEnvVar = $myCustomEnvVar'
       }
     }
   }
